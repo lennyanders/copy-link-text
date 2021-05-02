@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "name": "copy-link-text",
+  "description": "An extension to copy the text of a link.",
+  "permissions": ["contextMenus"],
+  "background": { "scripts": ["background.js"] },
+  "content_scripts": [{ "matches": ["<all_urls>"], "js": ["content.js"] }],
+  "manifest_version": 2
+}
